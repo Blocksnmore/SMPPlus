@@ -19,7 +19,7 @@ public class Invsee extends BaseCommand {
                 player.sendMessage(Color.applyColor("&cUnknown player! Make sure the user is online"));
             } else {
                 player.sendMessage(Color.applyColor("&bOpening inventory!"));
-                player.openInventory((Inventory) targetPlayer.getPlayer().getInventory());
+                player.openInventory(targetPlayer.getPlayer().getInventory());
             }
         }
     }

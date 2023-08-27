@@ -23,7 +23,7 @@ public class Rename extends BaseCommand {
                 player.sendMessage(Color.applyColor("&cPlease hold an item!"));
             } else {
                 ItemMeta itemMeta = playerItem.getItemMeta();
-                itemMeta.setDisplayName(Color.applyColor(name));
+                itemMeta.displayName(Component.text(Color.applyColor(name)));
                 playerItem.setItemMeta(itemMeta);
                 player.getInventory().setItemInMainHand(new ItemStack(Material.AIR));
                 player.getInventory().setItemInMainHand(playerItem);

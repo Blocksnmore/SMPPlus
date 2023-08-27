@@ -14,7 +14,7 @@ public class Color {
 
         while (matcher.find()) { // Searches the message for something that matches the pattern
             String color = message.substring(matcher.start(), matcher.end()); // Extracts the color from the message
-            message = message.replace(color, "" + ChatColor.of(color.substring(1))); // Places the color in the message
+            message = message.replace(color, String.valueOf(ChatColor.of(color.substring(1)))); // Places the color in the message
         }
 
         return message; // Returns the message

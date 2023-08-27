@@ -47,7 +47,7 @@ public class Ilore extends BaseCommand {
             p.sendMessage(Color.applyColor("&cPlease hold an item!"));
         } else {
             ItemMeta itemMeta = playerItem.getItemMeta();
-            itemMeta.lore(new ArrayList<Component>());
+            itemMeta.lore(new ArrayList<>());
             playerItem.setItemMeta(itemMeta);
 
             p.getInventory().setItemInMainHand(new ItemStack(Material.AIR));
@@ -76,7 +76,7 @@ public class Ilore extends BaseCommand {
                 ItemMeta itemMeta = playerItem.getItemMeta();
                 List<Component> oldlore = itemMeta.lore();
                 if (oldlore == null) {
-                    oldlore = new ArrayList<Component>();
+                    oldlore = new ArrayList<>();
                 }
                 int index = Integer.parseInt(line) -1;
                 if (oldlore.get(index) != null && oldlore.size() +1 >= index) {
@@ -113,7 +113,7 @@ public class Ilore extends BaseCommand {
 
                 List<Component> oldlore = itemMeta.lore();
                 if (oldlore == null) {
-                    oldlore = new ArrayList<Component>();
+                    oldlore = new ArrayList<>();
                 }
 
                 oldlore.add(Component.text(Color.applyColor(line)));
@@ -152,7 +152,7 @@ public class Ilore extends BaseCommand {
 
                 List<Component> oldlore = itemMeta.lore();
                 if (oldlore == null) {
-                    oldlore = new ArrayList<Component>();
+                    oldlore = new ArrayList<>();
                 }
 
                 int index = Integer.parseInt(line) -1;
