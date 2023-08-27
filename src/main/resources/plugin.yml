@@ -1,0 +1,19 @@
+name: Smpplus
+version: '${project.version}'
+main: io.github.blocksnmore.smpplus.Main
+api-version: 1.19
+authors: [ Blocks_n_more ]
+
+commands:
+  smpplus:
+    description: Core SMPPlus command
+
+permissions:
+  smpplus.*:
+    description: All SMPPlus permissions
+    default: op
+    children:
+      smpplus.invsee: true
+  smpplus.invsee:
+    description: Invsee permissions
+    default: op

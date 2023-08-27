@@ -1,0 +1,25 @@
+# SMPPlus
+# Created by Blocks_n_more
+
+# Enable color tweaks such as color codes in signs and anvils
+colortweak: true
+
+# Require xp for iname/lore
+requirexp: true
+
+# Better chat formatting
+betterchat:
+  enabled: true
+  format: "%player% &r&f> %text%"
+
+# If creepers shouldn't blow up blocks
+noexplosions: true
+
+# Make mc not drop 7 levels when you die with 30
+# Supposedly this has a xp dupe glitch, use at your own risk
+fixstupidxp: false
+# Drop the xp orbs (Requires fixstupidxp)
+dropxp: true
+
+# When you right-click on crops it harvests and auto places
+ezcrops: true
